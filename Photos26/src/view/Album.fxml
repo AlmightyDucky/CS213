@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AlbumController">
+   <bottom>
+      <VBox prefHeight="88.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="45.0" prefWidth="510.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="addBtn" mnemonicParsing="false" onAction="#handleAdd" prefHeight="25.0" prefWidth="54.0" text="Add">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="delBtn" mnemonicParsing="false" onAction="#handleDel" prefHeight="25.0" prefWidth="66.0" text="Delete">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="openBtn" mnemonicParsing="false" onAction="#handleOpen" prefHeight="25.0" prefWidth="62.0" text="Open" />
+                  <Button fx:id="editBtn" mnemonicParsing="false" onAction="#handleEdit" prefHeight="25.0" prefWidth="52.0" text="Edit">
+                     <HBox.margin>
+                        <Insets left="295.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="48.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#handleLogout" prefHeight="29.0" prefWidth="60.0" text="Logout">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="quitBtn" mnemonicParsing="false" onAction="#handleQuit" prefHeight="29.0" prefWidth="46.0" text="Quit">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <TableView fx:id="albumTable" onSort="#handleAdd" prefHeight="189.0" prefWidth="560.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="172.0" text="Name" />
+          <TableColumn fx:id="photoColumn" prefWidth="202.0" text="Number of Photos" />
+            <TableColumn fx:id="dateColumn" prefWidth="187.0" text="Date Range  " />
+        </columns>
+         <BorderPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </BorderPane.margin>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <top>
+      <VBox prefHeight="71.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="61.0" prefWidth="600.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Albums" textAlignment="CENTER">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="searchBtn" mnemonicParsing="false" onAction="#handleSearch" text="Search">
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

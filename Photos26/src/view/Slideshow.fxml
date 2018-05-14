@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SlideshowController">
+   <children>
+      <ImageView fx:id="photoImage" fitHeight="300.0" fitWidth="570.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="14.0" />
+      <Button fx:id="leftButton" layoutX="261.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleImageNavigation" text="&lt;---" />
+      <Button fx:id="rightButton" layoutX="300.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleImageNavigation" text="---&gt;" />
+      <Button fx:id="quitAppButton" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleQuit" text="Quit" />
+      <Button fx:id="logoutButton" layoutX="470.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+      <Button fx:id="returnToPhotoButton" layoutX="409.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleReturn" text="Return" />
+      <BorderPane layoutX="108.0" layoutY="-153.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
