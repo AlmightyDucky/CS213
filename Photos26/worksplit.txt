@@ -1,0 +1,16 @@
+Work Split Document
+
+Chris Gonzalez:
+
+Design guis using Scene Builder (Front end)
+
+Backend Photos Subsystem
+
+
+
+Robert Barbaro:
+
+Backend Admin Subsystem
+
+Backend Album Subsystem 
+

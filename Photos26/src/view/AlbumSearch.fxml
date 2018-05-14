@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AlbumSearchController">
+   <children>
+      <ListView fx:id="photoList" layoutX="30.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="280.0" layoutY="241.0" text="Caption" />
+      <Label layoutX="281.0" layoutY="266.0" text="Date" />
+      <Label layoutX="281.0" layoutY="291.0" text="Person Tags" />
+      <Label layoutX="281.0" layoutY="315.0" text="Location Tags" />
+      <Label fx:id="captionText" layoutX="372.0" layoutY="233.0" prefHeight="32.0" prefWidth="200.0" text="caption" wrapText="true" />
+      <Label fx:id="dateText" layoutX="373.0" layoutY="266.0" text="01/01/1980" />
+      <Label fx:id="personTagText" layoutX="373.0" layoutY="291.0" text="pTag" />
+      <Button fx:id="addBtn" layoutX="24.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleAdd" text="Create Album" />
+      <Button fx:id="qutAppButton" layoutX="540.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleQuit" text="Quit" />
+      <Button fx:id="logoutButton" layoutX="477.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+      <Button fx:id="returnToAlbumButton" layoutX="416.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleReturn" text="Return" />
+      <ImageView fx:id="photoImage" fitHeight="220.0" fitWidth="330.0" layoutX="242.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="locationTagText" layoutX="373.0" layoutY="316.0" text="lTag" />
+   </children>
+</AnchorPane>
